@@ -1,0 +1,9 @@
+.border {
+  border: 1px solid red;
+}
+.border-blue {
+  border: 1px solid blue;
+}
+.border-blue-thick {
+  border: 10px solid blue;
+}

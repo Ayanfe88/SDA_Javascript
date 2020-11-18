@@ -1,0 +1,35 @@
+@mixin ellipsis($max-width: 300px) {
+  display: inline-block;
+  overflow: hidden;
+  max-width: $max-width;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+@mixin placeholder {
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &::-webkit-input-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+}
+@mixin center($direction) {
+  position: absolute;
+  @if $direction == 'both' {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  } @else if $direction == 'vertical' {
+    top: 50%;
+    transform: translateY(-50%);
+  } @else if $direction == 'horizontal' {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

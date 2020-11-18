@@ -1,0 +1,143 @@
+@import '_variables';
+@import '_mixins';
+
+* {
+	// outline: 1px solid black;
+	margin: 0;
+	padding: 0;
+}
+.short-note {
+	@include ellipsis(400px, 50px);
+}
+.sda-input {
+	@include placeholder {
+		font-weight: bold;
+		color: red;
+	}
+}
+
+.sda-button {
+	border: 1px solid red;
+	padding: 5px 10px;
+	font-size: 16px;
+	text-align: center;
+	cursor: pointer;
+}
+.sda-button-me {
+	outline: none;
+	background-color: white;
+	border: none;
+	margin: 50px; // too big margin for normal, using it to stand out from other buttons
+	padding: 10px 30px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	border-radius: 6px;
+	transition: background-color 0.12s ease-in-out, color 0.12s ease-in-out,
+		top 0.12s ease-in-out;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	position: relative;
+
+	cursor: pointer;
+	&:hover {
+		// transform: scale(1.2);
+		background-color: lightcoral;
+		color: white;
+		box-shadow: 0px 15px 20px rgba(240, 128, 128, 0.4);
+		top: 5px;
+	}
+}
+.sda-button-submit {
+	@extend .sda-button;
+	background-color: gray;
+	border: 1px solid green;
+	color: blue;
+}
+.sda-button-google {
+	@extend .sda-button;
+	background-image: url('./logo.png');
+	background-size: cover;
+	background-position: 50% 50%;
+	width: 100px;
+	height: 40px;
+}
+.sda-button-disabled {
+	@extend .sda-button;
+	background-image: url('https://res-5.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco/aguel56s3kqc0khlrmjc');
+	background-size: cover;
+	background-position: 50% 50%;
+	width: 100px;
+	height: 40px;
+	transition: filter 2s;
+	animation: pulse 10s infinite;
+
+	&:hover {
+		filter: invert(0.8);
+	}
+}
+
+@keyframes pulse {
+	0% {
+		filter: hue-rotate(0deg);
+	}
+	50% {
+		filter: hue-rotate(360deg);
+	}
+	100% {
+		filter: hue-rotate(0deg);
+	}
+}
+
+body {
+	background-color: $body-bg-color;
+}
+
+.header-title {
+	color: $header-title-color;
+}
+
+@each $icon-size in $icon-sizes {
+	.icon-#{$icon-size} {
+		font-size: $icon-size;
+		height: $icon-size;
+		width: $icon-size;
+	}
+}
+
+// @each $one-single-px-value-from-icon-sizes in $icon-sizes {
+//     .icon-#{$one-single-px-value-from-icon-sizes} {
+//         font-size: $one-single-px-value-from-icon-sizes
+
+// }
+
+@each $button-size in $button-sizes {
+	.button-#{$button-size} {
+		width: $button-size * 2;
+		height: $button-size;
+	}
+}
+
+.sda-navbar {
+	background-color: $header-bg-color;
+	ul {
+		display: flex;
+		list-style-type: none;
+
+		li {
+			margin: 10px;
+			padding: 10px;
+
+			a {
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 24px;
+				color: $header-title-color;
+				text-decoration: none;
+				border-bottom: 2px solid $header-title-color;
+				transition: padding 0.2s;
+
+				&:hover {
+					padding-bottom: 4px;
+				}
+			}
+		}
+	}
+}

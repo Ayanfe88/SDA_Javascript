@@ -1,0 +1,80 @@
+@import 'variables';
+@import '_mixins';
+
+*{
+    // outline: 1px solid black;
+    margin:0px;
+    padding: 0px;
+}
+
+.short-note {
+   @include ellipsis(200px);
+}
+
+.sda-input {
+    @include placeholder {
+      font-weight: bold;
+      color: red;
+    }
+  }
+
+  .sda-button {
+    border: 1px solid red;
+    padding: 5px 10px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+  }
+.sda-button-submit{
+    @extend.sda-button;
+    background-color: grey;
+    border: 1px solid green;
+    padding: 1px;
+}
+
+.sda-button-disabled{
+    @extend.sda-button;
+    background-color: blue;
+    border: 1px solid green;
+    padding: 1px;
+}
+
+@each $icon-sizes in $icon-sizes {
+    .icon-#{$icon-sizes}{
+        
+            font-size: $icon-sizes;
+            height: $icon-sizes;
+            width: $icon-sizes;
+          }
+    }
+
+body{
+    background-color: $body-bg-color;
+}
+.header-title{
+    color: $header-title-color;
+}
+.sda-navbar{
+    background-color:$header-title-color;
+    ul{
+        display: flex;
+        list-style-type: none;
+
+        li{
+            margin: 10px;
+            padding: 10px;
+
+            a {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 24px;
+                color: $header-title-color;
+                border-bottom: 2px solid $header-title-color;
+                transition: padding 0.2s;
+               
+                &:hover{
+                 padding-bottom: 4px;
+                }
+            }
+        }
+    }
+}
