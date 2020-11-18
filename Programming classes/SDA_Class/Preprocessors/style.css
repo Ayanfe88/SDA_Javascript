@@ -7,6 +7,7 @@
   display: inline-block;
   overflow: hidden;
   max-width: 400px;
+  height: .short-note 50px;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
@@ -51,40 +52,55 @@
   padding: 1px;
 }
 
-.icon-8px {
+.icon-8px, 16px, 24px, 32px, 48px, 64px {
   font-size: 8px;
   height: 8px;
   width: 8px;
 }
 
-.icon-16px {
+.icon-8px, 16px, 24px, 32px, 48px, 64px {
   font-size: 16px;
   height: 16px;
   width: 16px;
 }
 
-.icon-24px {
+.icon-8px, 16px, 24px, 32px, 48px, 64px {
   font-size: 24px;
   height: 24px;
   width: 24px;
 }
 
-.icon-32px {
+.icon-8px, 16px, 24px, 32px, 48px, 64px {
   font-size: 32px;
   height: 32px;
   width: 32px;
 }
 
-.icon-48px {
+.icon-8px, 16px, 24px, 32px, 48px, 64px {
   font-size: 48px;
   height: 48px;
   width: 48px;
 }
 
-.icon-64px {
+.icon-8px, 16px, 24px, 32px, 48px, 64px {
   font-size: 64px;
   height: 64px;
   width: 64px;
+}
+
+.button-10px {
+  width: 20px;
+  height: 10px;
+}
+
+.button-20px {
+  width: 40px;
+  height: 20px;
+}
+
+.button-30px {
+  width: 60px;
+  height: 30px;
 }
 
 body {
