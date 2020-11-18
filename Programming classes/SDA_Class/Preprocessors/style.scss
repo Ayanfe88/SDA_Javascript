@@ -8,7 +8,7 @@
 }
 
 .short-note {
-   @include ellipsis(200px);
+   @include ellipsis(400px, 50px);
 }
 
 .sda-input {
@@ -39,21 +39,30 @@
     padding: 1px;
 }
 
-@each $icon-sizes in $icon-sizes {
+@each $icon-size in $icon-sizes {
     .icon-#{$icon-sizes}{
         
-            font-size: $icon-sizes;
-            height: $icon-sizes;
-            width: $icon-sizes;
+            font-size: $icon-size;
+            height: $icon-size;
+            width: $icon-size;
           }
+    }
+
+    @each $button-size in $button-sizes {
+        .button-#{$button-size} {
+            width: $button-size * 2;
+            height: $button-size;
+        }
     }
 
 body{
     background-color: $body-bg-color;
 }
+
 .header-title{
     color: $header-title-color;
 }
+
 .sda-navbar{
     background-color:$header-title-color;
     ul{
