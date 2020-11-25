@@ -1,0 +1,96 @@
+.header{
+    
+    overflow: hidden;
+    background-color:#38ACED;
+    /* position: fixed;
+    width: 100px; */
+    position: sticky;
+    right: 30px;
+}
+.header a{
+    font: roboto;
+    float: right;
+    display: block;
+    text-align: right;
+    padding: 14px 16px;
+    
+}
+.my-hero-section{
+    background-image: url("../Images/Laptop.jpg");
+    height: 300px;
+}
+.my-hero-text{
+    font-size: 40px;
+    font: roboto;
+    padding: 10px;
+}
+ .well{
+    color: #38ACED;
+    font: roboto;
+    font-size: 40px;
+    margin-left: 50px;
+} 
+/* image styling */
+.img1{
+    display: flex;
+    position: absolute;
+    left: 450px;
+    top: 420px; 
+}
+ .fix{
+    overflow: auto;
+    padding-bottom: 30px;
+} 
+
+.section1{
+    background-color:  #CEE6F4;
+    text-align: center;
+    padding: 10px;
+    padding-right: 300px;
+    
+}
+.we{
+    font-size: 27px;
+    font: roboto;
+    color:rgb(46, 44, 44) ;
+}
+.join{
+
+    background-color: #58C3BA;
+    font-size: 30px;
+    color: #38ACED;
+    width: 200px;
+    text-align-last: center;
+    padding: 15px; 
+    display:inline-block;
+    margin-left: 100px;
+}
+
+table{
+border: 1px solid black;
+text-align-last: center;
+margin-left: 500px;
+}
+
+.member{
+    background-color: #CEE6F4;
+    text-align-last: center;
+    padding: 20px;
+}
+.mage{
+    margin-left: 400px;
+}
+.footer{
+    margin-left: 400px;
+}
+
+.mage{
+    display: flex;
+    /* justify-content: ; */
+    transition: 3s;
+}
+@media screen and (max-width: 600px) {
+    body { background-color: blue; }
+    .img1{display: none;}
+    .footer{display: block;}
+ }

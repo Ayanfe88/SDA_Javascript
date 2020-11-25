@@ -1,0 +1,14 @@
+@mixin ellipsis($max-width, $max-height) {
+	display: inline-block;
+	overflow: hidden;
+	max-width: $max-width;
+	height: $max-height;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+@mixin placeholder {
+	&::placeholder {
+		@content;
+	}
+}
