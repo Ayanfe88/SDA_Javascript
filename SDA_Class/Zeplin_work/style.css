@@ -4,8 +4,30 @@ body{
 .background {
     width: 507.6px;
     height: 237px;
-    margin: 0 55.9px 0 0;
-    padding: 20.7px 56.1px 17.2px 24.5px;
-    border-radius: 194.5px;
+    margin: 11% 20% 18% 22%;
+    padding: 41.5px 100px 70px 100px;
+    border-radius: 388.9px;
     background-color: #ffffff;
   }
+  .Login-page {
+    
+    margin: 14.5px 70px 107.5px 67.5px;
+    padding-left: 55%;
+    font-family: PaytoneOne;
+    font-size: 16px;
+    line-height: 1.47;
+    letter-spacing: 0.49px;
+    color: #000000;
+  }
+  .sample-button {
+    width: 227.5px;
+    height: 39px;
+    margin: 72.2px 0 125.7px 336px;
+    padding: 5.5px 65.4px 6px 2px;
+    border-radius: 15px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
+    background-color: #e6e6e6;
+  }
+  
+
+
