@@ -1,0 +1,49 @@
+body{
+   
+    
+    margin: 0;
+    padding: 16px 0 0 50px;
+    background-color: #2e3046;
+  }
+
+  .Ellipse-1 {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px 0 10px;
+    padding: 8px 5px 9px 4.5px;
+    border-style: solid;
+    border-width: 1.5px;
+    border-image-source: linear-gradient(to top, #1f80b7, #bc3a80);
+    border-image-slice: 1;
+  }
+
+  .Soundwave {
+    width: 132px;
+    height: 30px;
+    margin: 0px;
+    font-family: Poppins;
+    font-size: 12px;
+    /* text-align: left; */
+    color: #faf9f9;
+  }
+
+  ul{
+    margin: 14.5px 0 63.5px 96.5px;
+      padding: 0px;
+      overflow: hidden;
+  }
+
+  li a{ 
+    font-family: Poppins;
+    font-size: 14px;
+    color: #fffafa;
+    text-decoration: none;
+  
+  }
+
+  .landing-page-girl-1 {
+    width: 50px;
+    height: 70px;
+    margin: 40px 113px 0 0;
+    padding: 100.5px 174px 41.5px 0;
+  }
