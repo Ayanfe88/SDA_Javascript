@@ -9,3 +9,8 @@ function fibu(n) {
    return sequence;  
 }
 console.log(fibu(10))
+// Recursive Approach
+
+function fibu(params) {
+    
+}
