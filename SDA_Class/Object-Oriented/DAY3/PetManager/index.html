@@ -1,0 +1,78 @@
+<html>
+
+<head>
+    <title>Pet manager</title>
+</head>
+
+<body>
+    <section>
+    <h2>Register</h2>
+    <div>
+        <div>
+            <input id="register_name" placeholder="Full Name">
+        </div>
+        <div>
+            <input id="register_location" placeholder="Location">
+        </div>
+        <div>
+            <input id="register_username" placeholder="Username">
+        </div>
+        <div>
+            <input id="register_password" type="password" placeholder="Password">
+        </div>
+        <div>
+            <button onclick="register()">Register</button>
+        </div>
+    </div>
+
+</section>
+    <section>
+        <h2>Login</h2>
+        <div>
+            <div>
+                <input id="login_username" placeholder="Username">
+            </div>
+            <div>
+                <input id="login_password" placeholder="Password" type="password">
+            </div>
+            <div >
+                <button onclick="login()">Login</button>
+            </div>
+        </div>
+
+    </section>
+    <section>
+        <h2>Users search</h2>
+        <table>
+        <thead>
+        <td>Name</td>
+        <td>Username</td>
+        <td>Location</td>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+    </section>
+
+    <section>
+        <h2>My Profile</h2>
+        <table>
+            <thead>
+            <td>Item</td>
+            <td>Value</td>
+            </thead>
+            <tbody id="profileDisplayArea">
+
+            </tbody>
+        </table>
+
+    </section>
+</body>
+
+<script src="util.js"></script>
+<script src="Models/User.js"></script>
+<script src="Controllers/UserManager.js"></script>
+<script src="index.js"></script>
+</html>
