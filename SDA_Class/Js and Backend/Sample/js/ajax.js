@@ -13,6 +13,17 @@ window.onload = ()=> {
 
     //sending a request
     xhr.send();
+    
+    xhr.onreadystatechange = function (e) {
+        if (xhr.status === 200) {
+          //everything OK, do something with the data
+          console.log(xhr.responseText);
+        } else {
+          //some error occured, log it in the console
+          console.log('Error', xhr.statusText);
+        }
+      };
+
     xhr.onload = (data)=> {
         console.log(data);
         let result = data.target.response;
