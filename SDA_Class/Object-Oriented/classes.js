@@ -1,17 +1,19 @@
 /*Old way of making classes*/
-const OldPet = function (name, weight, type) {
-    this.id = 13232;
-    let _name;
-    let _weight = weight;
-    let _type = type;
-    this.introducePet = function () {
-        return `Hello, my name is ${_name}!`;
-    }
-    this.getName = function (){
-        return _name;
-    }
-    this.setName = function (name){
-        _name = name;
+class OldPet {
+    constructor(name, weight, type) {
+        this.id = 13232;
+        let _name;
+        let _weight = weight;
+        let _type = type;
+        this.introducePet = function () {
+            return `Hello, my name is ${_name}!`;
+        };
+        this.getName = function () {
+            return _name;
+        };
+        this.setName = function (name) {
+            _name = name;
+        };
     }
 }
 fluffy = new OldPet("caty", 2.5, "cat")
