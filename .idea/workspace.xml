@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41fb578e-5195-49c1-beeb-b8a9c1594658" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/SDA_Class/Object-Oriented/array.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SDA_Class/Object-Oriented/inheritance.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SDA_Class/Object-Oriented/Script.js" beforeDir="false" afterPath="$PROJECT_DIR$/SDA_Class/Object-Oriented/Script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +34,7 @@
       <option name="presentableId" value="Default" />
       <updated>1608209493961</updated>
       <workItem from="1608209498354" duration="25000" />
+      <workItem from="1610870480292" duration="1299000" />
     </task>
     <servers />
   </component>
