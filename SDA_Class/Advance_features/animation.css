@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: black;
+}
+
+.main-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    text-align: center;
+}
+.main-container{
+    display: block;
+}
+
+.title{
+    color: aliceblue;
+   font-size: 52px;
+   font-weight: bold;
+   letter-spacing: 20px;
+   margin-bottom: 24px;
+   animation: title-animation 4s 1;
+}
+.description{
+    font-size: 14px;
+    color: rgb(104, 17, 89);
+    animation: description-animation 4s 1;
+}
+/*******************ANIMATION *********/
+
+@keyframes title-animation{
+    0%{
+        margin-bottom: -48px;
+    }
+    25%{
+        letter-spacing: 24px;
+        margin-bottom: -48px;
+    }
+    75%{
+        letter-spacing: 8px;
+        margin-bottom: -48px;
+    }
+}
+@keyframes description-animation{
+    0%{
+        display: none;
+        visibility: hidden;
+    }
+    80%{
+        display: none;
+        visibility: hidden;
+    }
+    100%{
+        
+        visibility: visible;
+    }
+}

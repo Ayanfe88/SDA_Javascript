@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+
+  <body>
+    <div>
+      <img src="/Canvas_Audio/src/img/logo.jpg" width="100" height="80" border-radius= '4';
+      padding= '5' > 
+    </div>
+   
+    <button id="start">Click me</button>
+    <canvas id="canvas" ></canvas>
+    <audio
+      ontimeupdate="timeLeft = Math.floor(this.currentTime) + ' / ' + Math.floor(this.duration);"
+      id="audio"
+      class="hide"
+      controls
+    ></audio>
+    <div id="background"></div>
+
+    <script defer src="src/index.js"></script>
+  </body>
+</html>

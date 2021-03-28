@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none !important;
+  font-family: "Roboto", sans-serif;
+}
+
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+audio {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 30px;
+}
+
+button {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+
+h1 {
+  font-family:  "Trebuchet MS";
+} 
